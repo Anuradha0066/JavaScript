@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// 2D array
+let arr=[[1,2,3,4,5],[6,7,8,9,0],[1]]
+console.log(arr.length);//3
+console.log(arr[1][0]);
+
+// for(let i=0;i<arr.length;i++){
+//     for(let j=0;j<arr[i].length;j++){
+//         console.log(arr[i][j]);
+        
+//  }
+// }
+
+// let a=-Infinity;
+// for(let i=0;i<arr.length;i++){
+//     for(let j=0;j<arr[i].length;j++){
+//        if(arr[i][j]>a){
+//        a= arr[i][j];
+//        }
+//         }
+//  }
+// console.log(a)
+ 
+// let data=arr.map((a,b,c)=>a.map((res)=>{return res*2}))
+//    console.log(arr[i]); 
+  
+//  let maxValue=arr.reduce((a,b)=>{
+//     return a>b?a:b
+//  })  
+ 
+// let sum=0;
+// for (let i=0;i<arr.length;i++){
+//     for(let j=0;j<arr[i].length;j++){
+//         sum=sum+arr[i][j];
+//     }
+// }
+// console.log(sum);
+
+
+// sum of 2D
+let totalSum=arr.reduce((sum,b)=>{
+    return sum+b.reduce((val,res)=>{return val+res},0)
+
+},0)
+ console.log(totalSum);
+ 
+
+ //sum of 1D
+ let arr1=[1,2,3]
+ let data=arr1.reduce((a,b)=>{
+    return a+b
+ },0)
+ console.log(data);
+ 
+    
+ a=arr.flat()
+ console.log(arr.flat());
+ let data1=a.reduce((a,b)=>{
+    return a>b?a:b
+ },0)
+ console.log(data1);
+ 
+
+    </script>
+</body>
+</html>
