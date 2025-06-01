@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//CALLBACK FUNCTION
+
+// function check(num,fn){
+//     return fn(num)
+// }
+
+// function checkNum(){
+//     return typeof num == "number"
+// }
+// check(10,checkNum)
+
+//CLOSURE
+        // function outer(){
+        //     let userName="lob";
+        //     function printName(){
+        //         console.log(userName);
+                
+
+        //     }
+        //  printName()
+        // }
+        // outer()
+
+    //      function outer(){
+    //         let userName="lob";
+    //         function printName(){
+    //             console.log(userName);
+                
+
+    //         }
+    //   return printName
+    //     }
+    //    let fn= outer()
+    //    fn()
+
+    function counter(){
+        let count=0
+        return{
+            getCount:function(){
+                return count;
+            }
+        }
+    }
+    let fn=counter()
+    console.log(fn.getCount());
+    
+    </script>
+</body>
+</html>
