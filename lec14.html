@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a=5;
+        // let obj={
+        //     name:"palak",
+        //     a:44,
+        //     amount:4040,
+        //     getBalance:function(){
+        //         console.log(this.a);
+                
+        //     }
+        // }
+        // obj.getBalance()
+
+
+        // let a=5;
+        // var a=5;
+        // let obj={
+        //     name:"palak",
+        //     a:44,
+        //     amount:4040,
+        //     getBalance:()=>{
+        //         console.log(this.a);
+                
+        //     }
+        // }
+        // obj.getBalance()
+
+
+
+  //PROTOTYPE
+
+    // let obj={
+    //     id:1,
+    //     name:"ritik"
+    // }
+    // console.log(obj.toString());
+    // console.log(obj.lastName);//undefined
+    // console.log(obj.__proto__);
+
+
+    // arr=> Array.prototype => Object.prototype => null
+    // prototypal Chain
+    
+    let str="Hello"
+   // str=> String.prototype =>Object.prototype=> null
+    console.log(str.toLowerCase());
+    
+//    a=val
+//    b=index
+//    c=Array
+
+
+//Make a function
+
+Array.prototype.myMap=function(cb){  //cb=callback
+   let res=[]
+   for(var i=0;i<this.length;i++){
+   var data= cb(this[i],i,this)
+   res.push(data)
+   }
+   return res
+}
+let arr=[1,2,3]
+let val=arr.myMap((a,b,c)=>{
+    return a*2
+})
+console.log(val);
+
+   </script>
+</body>
+</html>
