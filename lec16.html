@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// call bind apply
+//use for data sharing
+// call use for single parameter 
+// apply for more than one
+//bind will give output when it calls it do not run immediately
+
+// let obj={
+//     id:1,
+//     name:"rahul",
+//     lastName:"kumar",
+//     getFullName:function(age,ispass,a){
+//         console.log(this.name+" "+this.lastName+" "+age+" "+ispass+" "+a);
+     
+//     }
+// }
+// let obj1={
+//     id:2,
+//     name:"sakshi",
+//     lastName:"jaiswal"
+// }
+// //obj.getFullName.call(obj1,22,true)
+// //obj.getFullName.apply(obj1,22,true,3)
+// let data= obj.getFullName.bind(obj1,[])
+// data()
+
+
+
+//CONSTRUCTOR
+
+function user(a,b){
+ this.userName=a,
+ this.lastName=b
+}
+let data= new user("rahul","jain")
+let data1=new user("rohit","jain")
+console.log(data);
+console.log(data1);
+
+
+    </script>
+</body>
+</html>
