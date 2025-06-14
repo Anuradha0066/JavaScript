@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+    // let step1= function (){
+    //     return new Promise((res,rej)=>{
+    //         setTimeout(()=>{
+    //         res("select a photo")
+    //         },5000)
+    //     })
+    // }
+    // let step2= function (){
+    //     return new Promise((res,rej)=>{
+    //         setTimeout(()=>{
+    //         res("filter a photo")
+    //         },4000)
+    //     })
+    // }
+//    step1().then((data)=>{
+//     console.log(data);
+//        return step2()
+    
+//    }).then((filter)=>{
+//     console.log(filter);
+    
+//    })
+
+
+// async function call(){
+//    let data= await step1()
+//    console.log(data);
+   
+//    console.log("hello");
+   
+//    let data1= await step2()
+//    console.log(data1);
+   
+// }
+// call()
+  
+
+// callback hell => promise => async await
+
+
+// function greet(name="anu",callback){
+//     setTimeout(()=>{
+//         console.log(name,"hello");
+        
+//     },2000)
+// }
+// greet()
+
+setTimeout(() => {   console.log('Step 1');
+   setTimeout(() => {     console.log('Step 2');
+        setTimeout(() => { console.log('Step 3');
+    }, 1000);
+  }, 1000);
+}, 1000);
+
+   </script> 
+    
+</body>
+</html>
