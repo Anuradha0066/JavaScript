@@ -1,17 +1,53 @@
-// let h2=document.querySelector("h2")
-// h2.innerText
+// let arr=[1,2,3,4]
+// let arr2=[2,34,5,...arr]
 
-// $("h2").css({
-//     color:"red",
-//     border:"1px solid green",
-// })
-// console.log($("h2").text("hiii"));
+// console.log(arr2);
 
-$("button").click(()=>{
- console.log("hehehe");
- $("h2").fadeOut()
-})
+// let obj={
+//   name:"anu",
+//   id:1
+// }
+// let {name,id}=obj
+// console.log(name,id);
 
-$("#in").click(()=>{
-    $("h2").fadeIn()
-})
+// let arr=[1,2,3,4,4]
+// let[a,b,c]=arr
+// console.log(a,b,c);
+
+
+// pure function-no change how many times you call
+// impure function-it can chnge for eg. increment in function
+// first class function- a function stored in variable
+
+//function curring
+// function add(){
+//     console.log('hii');
+
+//     return function(b){
+//         console.log('hwllo');
+        
+//     }
+    
+// }
+// add()()
+
+// function add(a){
+
+
+//     return function(b){
+      
+//         console.log(a+b);
+        
+//     }
+    
+// }
+// add(2)(3)
+
+import {user } from "./home.js";
+console.log(user);
+import a from "./home"
+
+share(2,3)
+
+// import a from "./home.js"
+// console.log(a);
